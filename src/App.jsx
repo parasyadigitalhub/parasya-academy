@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Courses from './pages/Courses';
-import Contact from './pages/Contact';
+import Header from './components/header';
+import Footer from './components/footer';
+import Home from './pages/home';
+import About from './pages/about';
+import Courses from './pages/courses';
+import Contact from './pages/contact';
 import './app.css'
 
 function App() {
