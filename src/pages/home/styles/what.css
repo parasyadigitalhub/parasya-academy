@@ -1,0 +1,86 @@
+.what-container {
+    background-color: #091221;
+    color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.what-headings {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.what-headings h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.what-headings p {
+    font-size: 1.1rem;
+    color: #d1d5db;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.what-card {
+    background-color: #1e2a3b;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.what-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.card-icon {
+    background-color: #ebecef;
+    color: #1e2a3b;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: transform 0.3s ease;
+}
+
+.what-card:hover .card-icon {
+    transform: scale(1.2);
+}
+
+.what-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.what-card p {
+    color: #cbd5e1;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .what-container {
+        padding: 3rem 1rem;
+    }
+}
