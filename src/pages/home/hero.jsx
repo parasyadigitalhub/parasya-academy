@@ -18,13 +18,14 @@ export default function Hero() {
             </div>
             <div className="hero-right">
                 <div className="main-img-container">
-                    <span className="job-badge float-behind">100% Job Support</span>
-                    <img src="/ins1.jpg" alt="Instructor" className="main-img" />
-                    <span className="expert-badge">Expert Instructors</span>
+                    <span className="job-badge">100% Job Support</span>
+                    <div className="main-img-wrapper">
+                        <img src="/ins1.jpg" alt="Instructor" className="main-img" />
+                        <span className="expert-badge">Expert Instructors</span>
+                    </div>
                 </div>
                 <img src="/ins2.jpg" alt="Instructor" className="small-img" />
             </div>
-
         </div>
     )
 }

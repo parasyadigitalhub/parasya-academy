@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     gap: 2rem;
 }
 
@@ -72,7 +72,6 @@
     font-size: 1.1rem;
 }
 
-/* Float animation with larger movement */
 @keyframes floatSync {
     0% {
         transform: translateY(0);
@@ -98,9 +97,15 @@
 
 .main-img-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-img-wrapper {
+    position: relative;
 }
 
 .main-img {
@@ -108,29 +113,15 @@
     height: auto;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #FAFAFA;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    z-index: 2;
-}
-
-.small-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #FAFAFA;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    animation: floatSync 4s ease-in-out infinite;
-    z-index: 3;
+    margin: 1px;
 }
 
 .job-badge {
     position: absolute;
-    top: 10%;
-    left: -50%;
+    top: -20px;
+    right: 60%;
+    transform: translateX(-50%);
     background-color: white;
     color: #020817;
     font-weight: bold;
@@ -144,9 +135,8 @@
 
 .expert-badge {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%);
+    bottom: 10px;
+    right: 10px;
     background-color: #020817;
     color: white;
     font-weight: bold;
@@ -154,6 +144,20 @@
     border-radius: 999px;
     font-size: 0.9rem;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+    z-index: 3;
+}
+
+.small-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FAFAFA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: floatSync 4s ease-in-out infinite;
     z-index: 3;
 }
 
