@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 4rem;
+    padding: 1rem 4rem;
     gap: 2rem;
 }
 
@@ -15,14 +15,14 @@
 }
 
 .hero-left h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin: 0.5rem 0;
     color: #ffffff;
 }
 
 .hero-left p {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #94A3B8;
 }
 
@@ -129,7 +129,7 @@
     border-radius: 999px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     font-size: 0.9rem;
-    z-index: 1;
+    z-index: 0;
     animation: floatSync 4s ease-in-out infinite;
 }
 
@@ -161,25 +161,98 @@
     z-index: 3;
 }
 
-/* Responsive */
+@media (max-width: 1024px) {
+    .hero-left h1 {
+        font-size: 2rem;
+    }
+
+    .hero-left p {
+        font-size: 1rem;
+    }
+
+    .main-img {
+        width: 240px;
+    }
+
+    .small-img {
+        width: 120px;
+    }
+
+    .job-badge {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        top: -15px;
+    }
+
+    .expert-badge {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        bottom: 6px;
+        right: 6px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
         text-align: center;
-        padding: 3rem 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .hero-list ul {
         justify-content: center;
     }
 
-    .hero-right {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .hero-left button {
+        width: 100%;
         justify-content: center;
     }
 
-    .hero-right img {
-        max-width: 180px;
+    .main-img-container {
+        margin: 2rem auto;
+    }
+
+    .main-img {
+        width: 200px;
+    }
+
+    .small-img {
+        width: 100px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .job-badge {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-left p {
+        font-size: 0.95rem;
+    }
+
+    .hero-left button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .main-img {
+        width: 160px;
+    }
+
+    .small-img {
+        width: 80px;
     }
 }
