@@ -41,8 +41,8 @@ export default function First() {
             <div className="first-cards">
                 {cards.map((card, index) => (
                     <div key={index} className="first-card">
-                        <div className="card-icon" dangerouslySetInnerHTML={{ __html: card.icon }} />
-                        <div className="card-content">
+                        <div className="first-card-icon" dangerouslySetInnerHTML={{ __html: card.icon }} />
+                        <div className="first-card-content">
                             <h4>{card.head}</h4>
                             <p>{card.para}</p>
                         </div>
