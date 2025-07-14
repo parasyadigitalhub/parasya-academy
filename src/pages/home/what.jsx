@@ -47,11 +47,11 @@ export default function What() {
                 <p>At Parasya Academy, we don't just teach theory—we help you build real
                     skills, confidence, and a clear path to success</p>
             </div>
-            <div className="cards-grid">
+            <div className="what-cards-grid">
                 {cards.map((card) => (
                     <div className="what-card" key={card.id}>
                         <div
-                            className="card-icon"
+                            className="what-card-icon"
                             dangerouslySetInnerHTML={{ __html: card.icon }}
                         />
                         <h3>{card.head}</h3>

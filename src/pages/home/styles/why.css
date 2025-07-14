@@ -1,0 +1,145 @@
+.why-container {
+    background-color: #020817;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.why-headings {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.why-headings h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.why-headings p {
+    color: #cccccc;
+    font-size: 1.1rem;
+}
+
+.why-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.why-card-left,
+.why-card-right {
+    background-color: #1E2A3B;
+    width: 100%;
+    max-width: 360px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.why-card-left {
+    border-color: #ff4c4c;
+}
+
+.why-card-right {
+    border-color: #cccccc;
+}
+
+.why-card-left:hover,
+.why-card-right:hover {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.why-card-left h4,
+.why-card-right h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-card-left h4 i {
+    background-color: #352A38;
+    padding: 0.4rem;
+    border-radius: 50%;
+    color: #ff4c4c;
+}
+
+.why-card-right h4 i {
+    background-color: #353E4E;
+    padding: 0.4rem;
+    border-radius: 50%;
+    color: inherit;
+}
+
+.why-card-left li,
+.why-card-right li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #dddddd;
+}
+
+.why-card-left li i {
+    color: #ff4c4c;
+}
+
+.why-card-right li i {
+    color: inherit;
+}
+
+.why-ready {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.why-ready p {
+    display: inline-block;
+    background-color: #1B202C;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.why-ready span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .why-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-card-left,
+    .why-card-right {
+        width: 100%;
+        max-width: 70vw;
+        padding: 1.5rem;
+    }
+
+    .why-headings h2 {
+        font-size: 2rem;
+    }
+
+    .why-headings p {
+        font-size: 1rem;
+    }
+
+    .why-ready p {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
