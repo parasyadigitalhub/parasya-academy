@@ -1,7 +1,7 @@
 .first-container {
     background-color: #020817;
     color: white;
-    padding: 2rem 2rem;
+    padding: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -13,22 +13,22 @@
     display: inline-block;
     border-radius: 2rem;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
     color: white;
 }
 
 .first-headings {
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 .first-headings h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .first-headings p {
-    font-size: 1.3rem;
-    max-width: 1000px;
+    font-size: 1.2rem;
     margin: 0 auto;
     color: #94A3B8;
 }
@@ -88,6 +88,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.first-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
 .first-card-icon {
     color: white;
     width: 40px;
@@ -96,8 +101,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
+    background-color: #0E1421;
 }
 
 .first-card-content h4 {
@@ -108,4 +114,42 @@
 .first-card-content p {
     font-size: 0.9rem;
     margin: 0;
+    color: #94A3B8;
+}
+
+@media (max-width: 768px) {
+    .first-headings h2 {
+        font-size: 2.2rem;
+    }
+
+    .first-headings p {
+        font-size: 1rem;
+    }
+
+    .first-buttons button {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .first-headings h2 {
+        font-size: 1.8rem;
+    }
+
+    .first-headings p {
+        font-size: 0.95rem;
+    }
+
+    .first-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .first-buttons button {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.2rem;
+    }
+
 }
