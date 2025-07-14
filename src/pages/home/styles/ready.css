@@ -26,7 +26,7 @@
     margin-bottom: 2rem;
 }
 
-button {
+.ready-card button {
     background-color: white;
     color: #0E1421;
     padding: 0.75rem 1.5rem;
@@ -37,11 +37,11 @@ button {
     transition: all 0.3s ease;
 }
 
-button i {
+.ready-card button i {
     margin-left: 10px;
 }
 
-button:hover {
+.ready-card button:hover {
     background-color: #f0f0f0;
 }
 
@@ -123,7 +123,7 @@ button:hover {
         justify-content: flex-start;
     }
 
-    button {
+    .ready-card button {
         width: 100%;
     }
 }
