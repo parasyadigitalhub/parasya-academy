@@ -1,6 +1,6 @@
 footer {
   background-color: #020817;
-  color: #A2A3AF;
+  color: #cbd5e1;
   text-align: center;
   padding: 2rem 2rem;
 }
@@ -33,7 +33,7 @@ footer {
 .footer-links ul li {
   margin-bottom: 0.5rem;
   cursor: pointer;
-  color: #A2A3AF;
+  color: #cbd5e1;
 }
 
 .footer-links ul li:hover {

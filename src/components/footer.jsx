@@ -52,8 +52,7 @@ export default function Footer() {
             <h3>Contact Info</h3>
             <ul>
               <li>📧 hello@parasyaacademy.com</li>
-              <li>📞 +1 (555) 123-4567</li>
-              <li>📍 123 Education St, Learning City, LC 12345</li>
+              <li>📞  +91 9447985763</li>
             </ul>
           </div>
         </div>
