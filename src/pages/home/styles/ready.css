@@ -1,0 +1,147 @@
+.ready-container {
+    background-color: white;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ready-card {
+    background-color: #0E1421;
+    color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.ready-headings h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ready-headings p {
+    font-size: 1.3rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: white;
+    color: #0E1421;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button i {
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.ready-border {
+    margin: 2rem auto;
+    height: 2px;
+    width: 80%;
+    background-color: #262B37;
+}
+
+.ready-container h5 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.ready-contact {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.ready-phone,
+.ready-email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 250px;
+    justify-content: flex-start;
+}
+
+.ready-phone i,
+.ready-email i {
+    background-color: #262B37;
+    padding: 0.4rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+    min-width: 40px;
+    text-align: center;
+}
+
+.ready-phone-details h6,
+.ready-email-details h6 {
+    text-align: start;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.ready-phone-details p,
+.ready-email-details p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+    .ready-headings h3 {
+        font-size: 2rem;
+    }
+
+    .ready-headings p {
+        font-size: 1rem;
+    }
+
+    .ready-card {
+        padding: 2rem;
+    }
+
+    .ready-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .ready-phone,
+    .ready-email {
+        justify-content: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ready-headings h3 {
+        font-size: 1.7rem;
+    }
+
+    .ready-headings p {
+        font-size: 0.95rem;
+    }
+
+    .ready-container {
+        padding: 2rem 1rem;
+    }
+
+    .ready-card {
+        padding: 1.5rem;
+    }
+}
