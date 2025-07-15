@@ -1,0 +1,74 @@
+.launch-container {
+    background-color: #020817;
+    padding: 4rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+.launch-headings h3 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.launch-headings p {
+    color: #94A3B8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.launch-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.launch-buttons button {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #020817;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 200px;
+}
+
+.launch-buttons button:nth-child(2) {
+    background-color: #020817;
+    color: white;
+}
+
+.launch-buttons button:nth-child(2):hover {
+    background-color: white;
+    color: #020817;
+}
+
+.launch-buttons i {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .launch-headings h3 {
+        font-size: 2rem;
+    }
+
+    .launch-headings p {
+        font-size: 1rem;
+    }
+
+    .launch-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .launch-buttons button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

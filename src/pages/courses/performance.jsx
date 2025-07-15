@@ -1,5 +1,6 @@
 import Choose from "./components/choose";
 import First from "./components/first";
+import Launch from "./components/launch";
 import Learn from "./components/learn";
 
 export default function Performance() {
@@ -8,6 +9,7 @@ export default function Performance() {
             <First />
             <Choose />
             <Learn />
+            <Launch />
         </div>
     )
 }
