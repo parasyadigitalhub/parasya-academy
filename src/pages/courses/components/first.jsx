@@ -38,8 +38,10 @@ export default function First() {
             </div>
             <div className="first-buttons">
                 <button onClick={() => navigate('/contact')}>Enroll Now - Limited Seats<i className="fa-solid fa-arrow-right"></i></button>
-                <button onClick={() => navigate('/contact')}>Download Curriculum</button>
-            </div>
+                <a href="/Parasya Academy Performance Marketing Module.pdf" target="_blank"
+                    rel="noopener noreferrer" className="download-btn">
+                    <button>Download Curriculum</button>
+                </a>            </div>
             <div className="first-cards">
                 {cards.map((card, index) => (
                     <div key={index} className="first-card">

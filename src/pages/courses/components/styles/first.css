@@ -67,6 +67,21 @@
     color: #020817;
 }
 
+.download-btn {
+    text-decoration: none;
+}
+
+.download-btn button {
+    background-color: #020817;
+    color: white;
+    border: 1px solid white;
+}
+
+.download-btn button:hover {
+    background-color: white;
+    color: #020817;
+}
+
 .first-cards {
     display: flex;
     justify-content: center;
