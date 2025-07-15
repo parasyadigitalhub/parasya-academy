@@ -1,0 +1,119 @@
+.team-container {
+    background-color: #020817;
+    color: white;
+    padding: 2rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.team-headings h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.team-headings p {
+    color: #94A3B8;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background-color: #1E2A3B;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    min-height: auto;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-icon {
+    background-color: #F2F3F4;
+    color: #020817;
+    padding: 0.8rem;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.team-card h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.team-card h5 {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    color: #CBD5E1;
+    margin-top: -1.2rem;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #94A3B8;
+    line-height: 1.4;
+    max-height: 4.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .team-headings h3 {
+        font-size: 2rem;
+    }
+
+    .team-headings p {
+        font-size: 1rem;
+    }
+
+    .team-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .team-cards {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-headings h3 {
+        font-size: 1.75rem;
+    }
+
+    .team-headings p {
+        font-size: 0.95rem;
+    }
+
+    .team-icon {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+    }
+
+    .team-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .team-card h5 {
+        font-size: 0.9rem;
+    }
+
+    .team-card p {
+        font-size: 0.85rem;
+    }
+}
