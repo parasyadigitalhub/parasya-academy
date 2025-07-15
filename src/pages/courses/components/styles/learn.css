@@ -1,0 +1,117 @@
+.learn-container {
+    background-color: #020817;
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.learn-card {
+    background-color: #1E2A3B;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-card:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.learn-headings h4 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.learn-headings p {
+    color: #94A3B8;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.learn-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.learn-list-left ul,
+.learn-list-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.learn-list-left li,
+.learn-list-right li {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.learn-list-left li i,
+.learn-list-right li i {
+    color: white;
+    font-size: 1rem;
+}
+
+.learn-note {
+    border-left: 4px solid white;
+    padding-left: 1rem;
+}
+
+.learn-note h5 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.learn-note p {
+    color: #94A3B8;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .learn-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .learn-headings h4 {
+        font-size: 1.5rem;
+    }
+
+    .learn-note h5 {
+        font-size: 1.1rem;
+    }
+
+    .learn-note p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .learn-card {
+        padding: 1.5rem;
+    }
+
+    .learn-headings p {
+        font-size: 0.95rem;
+    }
+
+    .learn-list-left li,
+    .learn-list-right li {
+        font-size: 0.95rem;
+    }
+}
