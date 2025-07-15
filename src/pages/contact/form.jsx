@@ -84,7 +84,7 @@ export default function Form() {
 
             const message = `Hi, my name is ${formData.firstName} ${formData.lastName}. I would like to discuss: ${formData.subject}. Here's my message: ${formData.message}. You can reach me at ${formData.email} or ${formData.phone}`;
             const encodedMessage = encodeURIComponent(message);
-            const url = `https://wa.me/919995498218?text=${encodedMessage}`;
+            const url = `https://wa.me/919447985763?text=${encodedMessage}`;
             window.open(url, '_blank');
         }
     };

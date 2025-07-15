@@ -90,6 +90,11 @@ footer {
   text-decoration: none;
 }
 
+.footer-fourth i {
+  color: #25d366;
+  margin-right: 0.5rem;
+}
+
 .footer-icons a:hover {
   background-color: rgba(250, 246, 246, 0.179);
   color: white;

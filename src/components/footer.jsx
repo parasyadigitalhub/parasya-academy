@@ -58,6 +58,12 @@ export default function Footer() {
               <li>
                 📞 <a href="tel:+919447985763">+91 9447985763</a>
               </li>
+              <li>
+                <i className="fab fa-whatsapp"></i>{' '}
+                <a href="https://wa.me/919447985763" target="_blank" rel="noopener noreferrer">
+                  WhatsApp Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
