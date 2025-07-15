@@ -1,0 +1,32 @@
+.empo-container {
+    background-color: #020817;
+    color: white;
+    padding: 2rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.empo-badge {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 0rem 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.empo-headings h1 {
+    font-size: 4rem;
+    margin: 1px 0;
+    color: white;
+}
+
+.empo-headings p {
+    color: #94A3B8;
+    max-width: 900px;
+    margin: 1.5rem auto 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
