@@ -1,12 +1,23 @@
 .form-container {
     background-color: #091221;
-    color: white;
+    color: #94A3B8;
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 2rem;
     align-items: stretch;
+}
+
+.form-left-heading,
+.form-right-headings h4,
+.form-card-content h5,
+.form-right-que h5 {
+    color: white;
+}
+
+.form-form-group label {
+    color: white;
 }
 
 .form-left {
@@ -66,8 +77,9 @@
     border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
-    align-self: start;
     transition: background 0.3s;
+    align-self: center;
+    width: 100%;
 }
 
 .form-contact-form button[type="submit"]:hover {
@@ -120,6 +132,7 @@
     font-size: 1.25rem;
     min-width: 48px;
     min-height: 48px;
+    color: white;
 }
 
 .form-card-content h5 {
@@ -141,11 +154,13 @@
 .form-right-que h5 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .form-right-que p {
     margin-bottom: 1rem;
     font-size: 1rem;
+    text-align: center;
 }
 
 .form-schedule-btn {
@@ -157,6 +172,8 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
+    display: block;
+    margin: 0 auto;
 }
 
 .form-schedule-btn:hover {
