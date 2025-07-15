@@ -1,0 +1,104 @@
+.choose {
+    background-color: #091221;
+    padding: 4rem 2rem;
+    color: #94A3B8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.choose-headings {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choose-headings h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.choose-headings p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.choose-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.choose-card {
+    background-color: #1E2A3B;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.choose-icon {
+    background-color: #353E4E;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.choose-icon i {
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .choose-headings h3 {
+        font-size: 2rem;
+    }
+
+    .choose-headings p {
+        font-size: 1rem;
+    }
+
+    .choose-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .choose-card p {
+        font-size: 0.95rem;
+    }
+
+    .choose-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .choose-headings h3 {
+        font-size: 1.7rem;
+    }
+
+    .choose-headings p {
+        font-size: 0.95rem;
+    }
+
+    .choose-card h4 {
+        font-size: 1rem;
+    }
+
+    .choose-card p {
+        font-size: 0.9rem;
+    }
+
+    .choose-cards {
+        grid-template-columns: 1fr;
+    }
+}
