@@ -1,0 +1,57 @@
+.aca-container {
+    background-color: #020817;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aca-badge {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.aca-badge i {
+    margin-right: 0.5rem;
+}
+
+.aca-headings h3 {
+    font-size: 4rem;
+    margin: 0.2rem 0;
+    color: white;
+}
+
+.aca-headings p {
+    color: #94A3B8;
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .aca-headings h3 {
+        font-size: 2rem;
+    }
+
+    .aca-headings p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aca-headings h3 {
+        font-size: 1.6rem;
+    }
+
+    .aca-badge {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.75rem;
+    }
+}

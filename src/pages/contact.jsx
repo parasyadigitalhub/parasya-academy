@@ -1,8 +1,11 @@
+import Aca from "./contact/aca";
+import Form from "./contact/form";
+
 export default function Contact() {
   return (
-    <div className="page">
-      <h1>Contact Page</h1>
-      <p>Welcome to our website!</p>
+    <div>
+      <Aca />
+      <Form />
     </div>
   );
 }
