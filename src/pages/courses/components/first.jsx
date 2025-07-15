@@ -1,4 +1,5 @@
 import './styles/first.css'
+import { useNavigate } from 'react-router-dom';
 
 const cards = [
     {
@@ -23,6 +24,7 @@ const cards = [
 ]
 
 export default function First() {
+    const navigate = useNavigate();
     return (
         <div className="first-container">
             <div className="first-badge">
@@ -35,8 +37,8 @@ export default function First() {
                     the best performance marketing agency. Get real agency experience in just 2 months.</p>
             </div>
             <div className="first-buttons">
-                <button>Enroll Now - Limited Seats<i className="fa-solid fa-arrow-right"></i></button>
-                <button>Download Curriculum</button>
+                <button onClick={() => navigate('/contact')}>Enroll Now - Limited Seats<i className="fa-solid fa-arrow-right"></i></button>
+                <button onClick={() => navigate('/contact')}>Download Curriculum</button>
             </div>
             <div className="first-cards">
                 {cards.map((card, index) => (

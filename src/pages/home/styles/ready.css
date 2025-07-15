@@ -98,6 +98,17 @@
     color: #ccc;
 }
 
+.ready-phone-details a,
+.ready-email-details a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.ready-phone-details a:hover,
+.ready-email-details a:hover {
+    text-decoration: underline;
+}
+
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 768px) {
     .ready-headings h3 {

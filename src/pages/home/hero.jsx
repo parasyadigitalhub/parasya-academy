@@ -1,13 +1,15 @@
 import './styles/hero.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+    const navigate = useNavigate();
     return (
         <div className="hero-container">
             <div className="hero-left">
                 <h1>Master New Skills</h1>
                 <h1>In Just 2 Months</h1>
                 <p>No boring theory. Learn with real projects, get hands-on experience, and build your future with industry-expert guidance.</p>
-                <button>Start Learning Today<i className="fa-solid fa-arrow-right"></i></button>
+                <button onClick={() => navigate('/courses')}>Start Learning Today<i className="fa-solid fa-arrow-right"></i></button>
                 <div className="hero-list">
                     <ul>
                         <li><i className="fa-regular fa-circle-check"></i> Industry-Ready Skills</li>

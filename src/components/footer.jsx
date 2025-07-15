@@ -52,8 +52,12 @@ export default function Footer() {
           <div className="footer-fourth">
             <h3>Contact Info</h3>
             <ul>
-              <li>📧 hello@parasyaacademy.com</li>
-              <li>📞  +91 9447985763</li>
+              <li>
+                📧 <a href="mailto:hello@parasyaacademy.com">hello@parasyaacademy.com</a>
+              </li>
+              <li>
+                📞 <a href="tel:+919447985763">+91 9447985763</a>
+              </li>
             </ul>
           </div>
         </div>
