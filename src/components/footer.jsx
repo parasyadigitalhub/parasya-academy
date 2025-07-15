@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles/footer.css';
 
 export default function Footer() {
@@ -31,20 +32,20 @@ export default function Footer() {
           <div className="footer-second">
             <h3>Quick Links</h3>
             <ul>
-              <li>Home</li>
-              <li>Courses</li>
-              <li>About Us</li>
-              <li>Contact</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/courses">Courses</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="footer-third">
             <h3>Popular Courses</h3>
             <ul>
-              <li>Performance Marketing Mastery</li>
-              <li>Agency Integrated Marketing</li>
-              <li>Digital Strategy</li>
-              <li>Coming Soon</li>
+              <li><Link to="/courses">Performance Marketing Mastery</Link></li>
+              <li><Link to="/courses">Agency Integrated Marketing</Link></li>
+              <li><Link to="/courses">Digital Strategy</Link></li>
+              <li><span>Coming Soon</span></li>
             </ul>
           </div>
 
