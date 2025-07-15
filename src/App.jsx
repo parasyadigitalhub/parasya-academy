@@ -6,11 +6,13 @@ import About from './pages/about';
 import Courses from './pages/courses';
 import Contact from './pages/contact';
 import './App.css'
+import ScrollToTop from './components/scrolltotop';
 
 function App() {
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
