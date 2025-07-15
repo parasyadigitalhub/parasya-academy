@@ -1,0 +1,109 @@
+.mission-container {
+    background-color: #091221;
+    padding: 4rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-cards {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mission-cards-left,
+.mission-cards-right {
+    background-color: #1E2A3B;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.mission-cards-left:hover,
+.mission-cards-right:hover {
+    border-color: white;
+}
+
+.mission-cards-left i,
+.mission-cards-right i {
+    background-color: #353E4E;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: white;
+}
+
+.mission-cards-left h3,
+.mission-cards-right h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission-cards-left p,
+.mission-cards-right p {
+    color: #94A3B8;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .mission-container {
+        padding: 3rem 1rem;
+    }
+
+    .mission-cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mission-cards-left,
+    .mission-cards-right {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .mission-cards-left h3,
+    .mission-cards-right h3 {
+        font-size: 1.3rem;
+    }
+
+    .mission-cards-left p,
+    .mission-cards-right p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mission-cards-left,
+    .mission-cards-right {
+        padding: 1rem;
+    }
+
+    .mission-cards-left i,
+    .mission-cards-right i {
+        font-size: 1.25rem;
+        padding: 0.6rem;
+    }
+
+    .mission-cards-left h3,
+    .mission-cards-right h3 {
+        font-size: 1.2rem;
+    }
+
+    .mission-cards-left p,
+    .mission-cards-right p {
+        font-size: 0.9rem;
+    }
+}
