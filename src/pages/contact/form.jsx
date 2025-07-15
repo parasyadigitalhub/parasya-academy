@@ -198,7 +198,17 @@ export default function Form() {
                     <p>
                         Schedule a free consultation to discuss your career goals and find the perfect course for you.
                     </p>
-                    <button className="form-schedule-btn">Schedule Free Consultation</button>
+                    <p>
+                        <a
+                            href="https://wa.me/919447985763"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="form-schedule-btn"
+                        >
+                            Schedule Free Consultation
+                        </a>
+                    </p>
+                    {/* <button className="form-schedule-btn">Schedule Free Consultation</button> */}
                 </div>
             </div>
         </div>
