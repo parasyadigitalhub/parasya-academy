@@ -10,7 +10,7 @@ export default function Launch() {
                 <p>Join the next batch and start working with industry professionals immediately.</p>
             </div>
             <div className="launch-buttons">
-                <button onClick={() => navigate('/contact')}>Apply for Next Batch<i class="fa-solid fa-arrow-right"></i></button>
+                <button onClick={() => navigate('/contact')}>Apply for Next Batch<i className="fa-solid fa-arrow-right"></i></button>
                 <button>Schedule a Call</button>
             </div>
         </div>

@@ -144,8 +144,8 @@
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
-    min-width: 48px;
-    min-height: 48px;
+    min-width: 40px;
+    min-height: 40px;
     color: white;
 }
 
@@ -202,5 +202,10 @@
 
     .form-right-que{
         margin-bottom: 4rem;
+    }
+
+    .form-card-icon{
+        font-size: 1rem;
+        padding: 0.1rem;
     }
 }

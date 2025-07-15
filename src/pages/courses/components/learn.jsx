@@ -11,18 +11,18 @@ export default function Learn() {
                 <div className="learn-list">
                     <div className="learn-list-left">
                         <ul>
-                            <li><i class="fa-solid fa-circle-check"></i>Work with Parasya - Best Performance Marketing Agency</li>
-                            <li><i class="fa-solid fa-circle-check"></i>Advanced analytics and conversion optimization</li>
-                            <li><i class="fa-solid fa-circle-check"></i>Email marketing automation</li>
-                            <li><i class="fa-solid fa-circle-check"></i>A/B testing and data analysis</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Work with Parasya - Best Performance Marketing Agency</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Advanced analytics and conversion optimization</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Email marketing automation</li>
+                            <li><i className="fa-solid fa-circle-check"></i>A/B testing and data analysis</li>
                         </ul>
                     </div>
                     <div className="learn-list-right">
                         <ul>
-                            <li><i class="fa-solid fa-circle-check"></i>Real client projects and live campaigns</li>
-                            <li><i class="fa-solid fa-circle-check"></i>Facebook, Google, TikTok, and LinkedIn advertising</li>
-                            <li><i class="fa-solid fa-circle-check"></i>Landing page optimization</li>
-                            <li><i class="fa-solid fa-circle-check"></i>Agency-level tools and workflows</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Real client projects and live campaigns</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Facebook, Google, TikTok, and LinkedIn advertising</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Landing page optimization</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Agency-level tools and workflows</li>
                         </ul>
                     </div>
                 </div>
