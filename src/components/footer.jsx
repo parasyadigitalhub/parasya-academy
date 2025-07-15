@@ -16,10 +16,10 @@ export default function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/parasya-academy" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/parasya.academy?igsh=MThmOXhzeTVlY3lzcA==" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
