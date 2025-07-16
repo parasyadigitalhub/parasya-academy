@@ -12,7 +12,7 @@ const cards = [
         id: 1,
         icon: '<i class="fa-regular fa-user"></i>',
         head: 'Batch Size',
-        para: '15 Students'
+        para: '10 Students'
     },
     {
         id: 1,
