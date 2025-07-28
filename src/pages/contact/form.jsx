@@ -25,17 +25,35 @@ const cards = [
     },
 ];
 
+const courses = [
+    {
+        id: 1,
+        name: 'Performance Marketing Mastery'
+    },
+    {
+        id: 2,
+        name: 'Agency Integrated Marketing'
+    },
+    {
+        id: 3,
+        name: 'Digital Strategy'
+    },
+]
+
 export default function Form() {
+
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzjug5ZxGnWuQCsTtHyf86B15uLf_V4JgybbU8Mgn5x2FXLZSb0AXL6onWcom3vJWGp/exec'
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
-        subject: '',
-        message: ''
+        course: '',
     });
 
     const [errors, setErrors] = useState({});
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -58,34 +76,50 @@ export default function Form() {
             newErrors.phone = 'Phone number is required';
         }
 
-        if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
-        if (!formData.message.trim()) newErrors.message = 'Message is required';
+        if (!formData.course.trim()) newErrors.course = 'Course is required';
 
         return newErrors;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const validationErrors = validate();
         setErrors(validationErrors);
 
         if (Object.keys(validationErrors).length === 0) {
-            console.log('Form submitted:', formData);
+            setIsLoading(true);
+            try {
+                const fullName = `${formData.firstName} ${formData.lastName}`;
+                const submissionData = new FormData();
+                submissionData.append('name', fullName);
+                submissionData.append('email', formData.email);
+                submissionData.append('phone', formData.phone);
+                submissionData.append('course', formData.course);
 
-            setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
-                phone: '',
-                subject: '',
-                message: ''
-            });
-            setErrors({});
+                const response = await fetch(scriptUrl, {
+                    method: 'POST',
+                    body: submissionData,
+                });
 
-            const message = `Hi, my name is ${formData.firstName} ${formData.lastName}. I would like to discuss: ${formData.subject}. Here's my message: ${formData.message}. You can reach me at ${formData.email} or ${formData.phone}`;
-            const encodedMessage = encodeURIComponent(message);
-            const url = `https://wa.me/919447985763?text=${encodedMessage}`;
-            window.open(url, '_blank');
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    setFormData({
+                        firstName: '',
+                        lastName: '',
+                        email: '',
+                        phone: '',
+                        course: ''
+                    });
+                    setErrors({});
+                } else {
+                    alert('Failed to send message. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('An error occurred. Please try again later.');
+            } finally {
+                setIsLoading(false);
+            }
         }
     };
 
@@ -144,31 +178,24 @@ export default function Form() {
                     </div>
 
                     <div className="form-form-group">
-                        <label htmlFor="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            placeholder="Subject"
-                            value={formData.subject}
-                            onChange={handleChange} autoComplete='off'
-                        />
-                        {errors.subject && <small className="form-error">{errors.subject}</small>}
-                    </div>
-
-                    <div className="form-form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            placeholder="Message"
-                            rows="4"
-                            value={formData.message}
+                        <label htmlFor="course">Select Course</label>
+                        <select
+                            id="course"
+                            value={formData.course}
                             onChange={handleChange}
-                        ></textarea>
-                        {errors.message && <small className="form-error">{errors.message}</small>}
+                        >
+                            <option value="">-- Choose a course --</option>
+                            {courses.map(course => (
+                                <option key={course.id} value={course.name}>
+                                    {course.name}
+                                </option>
+                            ))}
+                        </select>
+                        {errors.course && <small className="form-error">{errors.course}</small>}
                     </div>
 
-                    <button type="submit">
-                        Send Message <i className="fa-solid fa-paper-plane"></i>
+                    <button type="submit" disabled={isLoading}>
+                        {isLoading ? <div className="loader"></div> : <>Send Message <i className="fa-solid fa-paper-plane"></i></>}
                     </button>
                 </form>
             </div>
